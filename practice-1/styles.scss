@@ -1,0 +1,104 @@
+// =============================================
+// ПРАКТИКА 1 — CSS-препроцессоры (SASS)
+// Автор: [Хан Владлен Витальевич]
+// =============================================
+
+// 1. Переменные
+$primary: #0066ff;
+$accent: #ff2d55;
+$radius: 16px;
+$shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+$theme: dark;  
+
+// 2. Миксин для кнопки
+@mixin button($bg-color) {
+    padding: 14px 28px;
+    background: $bg-color;
+    color: white;
+    border: none;
+    border-radius: $radius;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba($bg-color, 0.3);
+    }
+
+    &:active {
+        transform: scale(0.97);
+    }
+}
+
+// 3. Миксин для карточки (hover-эффект)
+@mixin card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        transform: translateY(-12px);
+        box-shadow: $shadow;
+    }
+}
+
+// =============================================
+// Основные стили
+// =============================================
+
+.product-card {
+    width: 380px;
+    background: white;
+    border-radius: $radius;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+
+    @include card-hover;
+
+    img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+    }
+
+    &__content {
+        padding: 24px;
+    }
+
+    &__title {
+        margin: 0 0 12px 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: $primary;
+    }
+
+    &__description {
+        color: #555;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    &__price {
+        font-size: 28px;
+        font-weight: 700;
+        color: $accent;
+        margin-bottom: 20px;
+    }
+
+    // Кнопка через миксин
+    &__button {
+        width: 100%;
+        @include button($primary);
+    }
+
+    // Условная тёмная тема
+    @if $theme == dark {
+        background: #1e1e1e;
+        color: #eee;
+
+        &__title { color: #4da3ff; }
+        &__description { color: #aaa; }
+        &__price { color: #ff6b8a; }
+    }
+}
