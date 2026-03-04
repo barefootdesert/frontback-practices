@@ -17,14 +17,14 @@
 
 ## Структура проекта
 front-back-practices/
-├── practice-1/           → CSS-препроцессоры (SASS)
-├── practice-2/           → Сервер на Node.js + Express (CRUD товаров)
-├── practice-3/           → JSON, внешние API, тестирование в Postman
-├── practice-4/           → Полноценный интернет-магазин (React + Express API)
-│   ├── backend/          → серверная часть
-│   └── frontend/         → клиентская часть (React)
-├── practice-5/           → Расширенный REST API + документация Swagger
-└── README.md
+├── practice-1/           → CSS-препроцессоры (SASS)  
+├── practice-2/           → Сервер на Node.js + Express (CRUD товаров)  
+├── practice-3/           → JSON, внешние API, тестирование в Postman  
+├── practice-4/           → Полноценный интернет-магазин (React + Express API)  
+│   ├── backend/          → серверная часть  
+│   └── frontend/         → клиентская часть (React)  
+├── practice-5/           → Расширенный REST API + документация Swagger  
+└── README.md  
 
 
 ## Технологический стек
