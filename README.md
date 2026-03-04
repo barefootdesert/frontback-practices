@@ -49,35 +49,35 @@ front-back-practices/
 sass practice-1/styles.scss practice-1/styles.css
 # затем открыть index.html в браузере
 
- Практика 2 — Сервер на Node.js + Express
+### Практика 2 — Сервер на Node.js + Express
 
 Простой REST API для сущности «Товары»
 Реализованы: GET / POST / GET/:id / PATCH / DELETE
 
-Запуск:
-Bash
+**Запуск:**
+```bash
 
 cd practice-2
 npm install
 npm start
 # → http://localhost:3000
 
-Практика 3 — JSON и внешние API
+### Практика 3 — JSON и внешние API
 
 Изучение структуры JSON
 Парсинг, запросы к собственному API
 Тестирование в Postman (скриншоты в папке screenshots/)
 Примеры запросов к внешнему API (например, ExchangeRate-API)
 
-Практика 4 — API + React (интернет-магазин)
+### Практика 4 — API + React (интернет-магазин)
 
 Полноценное full-stack приложение «TechStore»
 CRUD операций над товарами
 React интерфейс + модальное окно редактирования/создания
 Связь frontend ↔ backend через axios
 
-Запуск:
-# backend
+**Запуск:**
+```# backend
 cd practice-4/backend
 npm install
 npm start
@@ -87,12 +87,12 @@ cd practice-4/frontend
 npm install
 npm start
 # → http://localhost:3000 (или 3001 — смотря create-react-app)
-Практика 5 — Расширенный REST API + Swagger
+### Практика 5 — Расширенный REST API + Swagger
 
 Добавлена автоматическая документация OpenAPI
 Интерактивная Swagger UI по адресу /api-docs
 
-Запуск:
+**Запуск:**
 Используйте backend из practice-5 (или замените backend из practice-4)
 cd practice-5/backend   # или practice-4/backend если заменили
 npm install
@@ -100,7 +100,7 @@ npm start
 # → http://localhost:3000/api-docs
 
 Автор
-Студент 4 семестра ИПТИП
+Машурцев Глеб
 2025–2026 учебный год
 
-Дата последнего обновления: февраль 2026
+Дата последнего обновления: март 2026
