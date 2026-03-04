@@ -1,3 +1,4 @@
+
 # Фронтенд и бэкенд разработка  
 Практические занятия 2025/2026 учебный год (4 семестр)
 
@@ -61,6 +62,7 @@ cd practice-2
 npm install
 npm start
 # → http://localhost:3000
+```
 
 ### Практика 3 — JSON и внешние API
 
@@ -87,18 +89,20 @@ cd practice-4/frontend
 npm install
 npm start
 # → http://localhost:3000 (или 3001 — смотря create-react-app)
+```
 ### Практика 5 — Расширенный REST API + Swagger
 
 Добавлена автоматическая документация OpenAPI
 Интерактивная Swagger UI по адресу /api-docs
 
 **Запуск:**
+```
 Используйте backend из practice-5 (или замените backend из practice-4)
 cd practice-5/backend   # или practice-4/backend если заменили
 npm install
 npm start
 # → http://localhost:3000/api-docs
-
+```
 Автор
 Машурцев Глеб
 2025–2026 учебный год
