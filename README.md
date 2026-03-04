@@ -49,6 +49,7 @@ front-back-practices/
 ```bash
 sass practice-1/styles.scss practice-1/styles.css
 # затем открыть index.html в браузере
+```
 
 ### Практика 2 — Сервер на Node.js + Express
 
